@@ -1,12 +1,11 @@
+import {Icon} from "../icon/Icon.tsx";
 
 
 export const Logo = () => {
     return (
-        <div>
-            <a href="">
-                <img src="" alt=""/>
-            </a>
-        </div>
+        <a href="">
+            <Icon iconId={'japanese-cat'}/>
+        </a>
     );
 };
 
