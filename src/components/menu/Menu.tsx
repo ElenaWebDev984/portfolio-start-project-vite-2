@@ -1,8 +1,9 @@
+import styled from "styled-components";
 
 
 export const Menu = () => {
     return (
-        <nav>
+        <StyledMenu>
             <ul>
                 <li>
                     <a href="">About</a>
@@ -17,7 +18,14 @@ export const Menu = () => {
                     <a href="">Contacts</a>
                 </li>
             </ul>
-        </nav>
+        </StyledMenu>
     );
 };
 
+const StyledMenu = styled.nav`
+    ul {
+        display: flex;
+        gap: 30px;
+        
+    }
+`
