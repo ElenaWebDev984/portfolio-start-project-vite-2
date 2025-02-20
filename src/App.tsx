@@ -4,6 +4,8 @@ import {Main} from "./layout/sections/main/Main.tsx";
 import {Skills} from "./layout/sections/skills/Skills.tsx";
 import {Works} from "./layout/sections/works/Works.tsx";
 import {About} from "./layout/sections/about/About.tsx";
+import {Footer} from "./layout/footer/Footer.tsx";
+import {Slogan} from "./layout/sections/slogan/Slogan.tsx";
 
 
 function App() {
@@ -14,6 +16,8 @@ function App() {
             <About />
             <Skills />
             <Works />
+            <Slogan />
+            <Footer />
         </div>
     )
 }
