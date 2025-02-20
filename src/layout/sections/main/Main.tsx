@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import photo from '../../../assets/images/foto2.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
+import {Button} from "../../../components/Button.tsx";
 
 export const Main = () => {
     return (
@@ -14,7 +15,7 @@ export const Main = () => {
                     <span>a</span>
                     <MainTitle>web developer</MainTitle>
                     <p>I craft responsive websites where technologies meet creativity</p>
-                    <button>Contact me!!</button>
+                    <Button type={'submit'}>Contact me!!!</Button>
                 </div>
                 <Photo src={photo} alt="foto"/>
             </FlexWrapper>
