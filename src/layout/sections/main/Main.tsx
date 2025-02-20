@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import photo from '../../../assets/images/foto1.webp'
+import photo from '../../../assets/images/foto2.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 
 export const Main = () => {
@@ -24,7 +24,8 @@ export const Main = () => {
 
 const StyledMain = styled.div`
     min-height: 100vh;
-    background-color: aquamarine;
+    background-color: #eaeeec;
+    border: 1px solid red;
 `
 
 const Photo = styled.img`
@@ -34,11 +35,12 @@ const Photo = styled.img`
 `
 
 const MainTitle = styled.h1`
-
+    color: #42446E;
+;
 `
 
 const Name = styled.h2`
-
+    color: #42446E;
 `
 
 

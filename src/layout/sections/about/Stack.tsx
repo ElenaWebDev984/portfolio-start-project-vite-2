@@ -30,7 +30,7 @@ export const Stack = (props: StackPropsType) => {
 };
 
 const StyledStack = styled.div`
-    
+    border: 1px solid blue;
 `
 
 const AboutSpan = styled.span`

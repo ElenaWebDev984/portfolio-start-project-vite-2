@@ -19,4 +19,5 @@ export const StackDivLocationWrapper = (props: StackDivLocationWrapperPropsType)
 
 const StyledStackDivLocation = styled.div`
     display: flex;
+    border: 2px solid green;
 `

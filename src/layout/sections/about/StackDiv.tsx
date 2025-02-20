@@ -19,9 +19,10 @@ export const StackDiv = (props: StackDivPropsType) => {
 const StyledStackDiv = styled.div`
     display: flex;
     text-align: center;
+    border: 1px solid orange;
 `
 
 
 const AboutIconSpan = styled.span`
-
+    
 `
