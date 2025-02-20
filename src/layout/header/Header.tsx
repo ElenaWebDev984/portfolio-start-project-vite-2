@@ -5,12 +5,15 @@ import {MenuContact} from "../../components/menu/MenuContact.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 
 
+const navItems = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact',]
+
+
 export const Header = () => {
     return (
         <StyledHeader>
             <Logo />
             <FlexWrapper>
-                <Menu />
+                <Menu menuItems={navItems} />
                 <MenuContact />
             </FlexWrapper>
         </StyledHeader>
