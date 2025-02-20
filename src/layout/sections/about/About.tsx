@@ -22,7 +22,7 @@ export const About = () => {
 
 
 const StyledAbout = styled.div`
-    min-height: 100vh;
+    min-height: 70vh;
     background-color: #eaeeec;
     border: 1px solid red;
 `
