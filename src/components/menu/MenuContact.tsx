@@ -29,7 +29,6 @@ export const MenuContact = () => {
 const StyledMenuContact = styled.nav`
     ul {
         display: flex;
-        //list-style: none;
         gap: 20px;
     }
 `
