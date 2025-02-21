@@ -5,12 +5,15 @@ type ProjectLinkDivPropsType = {
     iconId: string
     textLink: string
     href: string
+    width?: string
+    height?: string
+    viewBox?: string
 }
 
 export const ProjectLinkDiv = (props: ProjectLinkDivPropsType) => {
     return (
         <StyledProjectLinkDiv>
-            <Icon iconId={props.iconId} />
+            <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox} />
             <ProjectLink href={props.href}>{props.textLink}</ProjectLink>
         </StyledProjectLinkDiv>
     );

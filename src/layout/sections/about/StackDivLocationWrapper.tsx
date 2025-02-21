@@ -10,8 +10,8 @@ type StackDivLocationWrapperPropsType = {
 export const StackDivLocationWrapper = (props: StackDivLocationWrapperPropsType) => {
     return (
         <StyledStackDivLocation>
-            <StackDiv iconId={'city-location'} text={props.cityLocText} />
-            <StackDiv iconId={'location'} text={props.locationText} />
+            <StackDiv iconId={'city-location'} text={props.cityLocText} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+            <StackDiv iconId={'location'} text={props.locationText} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
         </StyledStackDivLocation>
     );
 };

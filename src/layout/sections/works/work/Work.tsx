@@ -25,8 +25,8 @@ export const Work = (props: WorkPropsType) => {
                 <MenuProject menuItems={projectItems} />
             </FlexWrapper>
             <FlexWrapper gap={'20px'}>
-                <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'}/>
-                <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'}/>
+                <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+                <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
             </FlexWrapper>
         </StyledWork>
     );

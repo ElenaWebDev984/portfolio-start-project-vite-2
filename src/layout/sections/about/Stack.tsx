@@ -23,7 +23,7 @@ export const Stack = (props: StackPropsType) => {
 
             <FlexWrapper justifyContent={'space-between'}>
                 <StackDivLocationWrapper cityLocText={props.cityLocText} locationText={props.locationText} />
-                <StackDiv iconId={'calendar'} text={props.calendarText} />
+                <StackDiv iconId={'calendar'} text={props.calendarText} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
             </FlexWrapper>
         </StyledStack>
     );

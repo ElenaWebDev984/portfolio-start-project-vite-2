@@ -8,17 +8,17 @@ export const MenuContact = () => {
             <ul>
                 <li>
                     <a href="">
-                        <Icon iconId={'github-cont'} />
+                        <Icon iconId={'github-cont'} width={'30'} height={'30'} viewBox={'0 0 30 30'} />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <Icon iconId={'twitter-cont'} />
+                        <Icon iconId={'twitter-cont'} width={'30'} height={'30'} viewBox={'0 0 30 30'} />
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <Icon iconId={'linkedin-cont'} />
+                        <Icon iconId={'linkedin-cont'} width={'30'} height={'30'} viewBox={'0 0 30 30'} />
                     </a>
                 </li>
             </ul>
@@ -30,5 +30,6 @@ const StyledMenuContact = styled.nav`
     ul {
         display: flex;
         //list-style: none;
+        gap: 20px;
     }
 `

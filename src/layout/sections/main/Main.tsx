@@ -45,3 +45,10 @@ const Name = styled.h2`
 `
 
 
+// PHOTO !!!
+
+// <picture>
+//     <source srcset='../../../assets/images/foto2.webp' type='image/webp'>
+//     <source srcset='../../../assets/images/foto2.jpg' type='image/jpg'>
+//     < img src = '../../../assets/images/foto2.jpg' type='image/jpg' alt = 'foto' >
+// </picture>

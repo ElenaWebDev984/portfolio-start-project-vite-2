@@ -11,30 +11,30 @@ export const Skills = () => {
             <SectionTitle>My Tech Stack</SectionTitle>
             <SectionText> Technologies I’ve been working with recently</SectionText>
             <FlexWrapper  wrap={'wrap'} justifyContent={'space-between'} >
-                <Skill iconId={'js'} />
-                <Skill iconId={'ts'} />
-                <Skill iconId={'react'} />
-                <Skill iconId={'redux'} />
-                <Skill iconId={'html'} />
-                <Skill iconId={'css'} />
-                <Skill iconId={'styledComponents'} />
-                <Skill iconId={'sass'} />
-                {/*<Skill iconId={'less'} />*/}
-                <Skill iconId={'figma'} />
-                <Skill iconId={'git'} />
-                <Skill iconId={'github'} />
-                <Skill iconId={'pnpm'} />
-                {/*<Skill iconId={'vite'} />*/}
-                <Skill iconId={'npm'} />
-                <Skill iconId={'yarn'} />
-                <Skill iconId={'nodejs'} />
-                <Skill iconId={'powershell'} />
-                {/*<Skill iconId={'webstorm'} />*/}
-                <Skill iconId={'vscode'} />
-                <Skill iconId={'bootstrap'} />
-                <Skill iconId={'tailwind'} />
-                <Skill iconId={'notion'} />
-                <Skill iconId={'babel'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'js'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'ts'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'react'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'redux'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'html'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'css'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'styledComponents'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'sass'} />
+                {/*<Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'less'} />*/}
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'figma'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'git'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'github'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'pnpm'} />
+                {/*<Skill width={'120'} height={'120'} viewBox={'0 0 120 120'}  iconId={'vite'} />*/}
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'npm'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'yarn'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'nodejs'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'powershell'} />
+                {/*<Skill width={'120} height={'120} viewBox={'0 0 120 120} iconId={'webstorm'} />*/}
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'vscode'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'bootstrap'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'tailwind'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'notion'} />
+                <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'babel'} />
             </FlexWrapper>
         </StyledSkills>
     );
