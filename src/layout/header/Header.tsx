@@ -3,6 +3,7 @@ import {Logo} from "../../components/logo/Logo.tsx";
 import {Menu} from "../../components/menu/Menu.tsx";
 import {MenuContact} from "../../components/menu/MenuContact.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
+import {Container} from "../../components/Container.tsx";
 
 
 const navItems = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact',]
@@ -11,11 +12,15 @@ const navItems = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact',]
 export const Header = () => {
     return (
         <StyledHeader>
-            <Logo />
-            <FlexWrapper>
-                <Menu menuItems={navItems} />
-                <MenuContact />
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper justifyContent='space-between' alignItems={'center'}>
+                    <Logo />
+                    <FlexWrapper>
+                        <Menu menuItems={navItems} />
+                        <MenuContact />
+                    </FlexWrapper>
+                </FlexWrapper>
+            </Container>
         </StyledHeader>
     );
 };
@@ -23,8 +28,5 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: #eaeeec;
-    display: flex;
-    justify-content: space-between;
-    border: 1px solid red;
 `
 

@@ -2,23 +2,25 @@ import styled from "styled-components";
 import photo from '../../../assets/images/foto2.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/Button.tsx";
+import {Container} from "../../../components/Container.tsx";
 
 export const Main = () => {
     return (
         <StyledMain>
-            <FlexWrapper alignItems={'center'} justifyContent={'space-around'}>
-                <div>
-                    <span>Hi there!</span>
-                    <br/>
-                    <span>I'm</span>
-                    <Name>Elena</Name>
-                    <span>a</span>
-                    <MainTitle>web developer</MainTitle>
-                    <p>I craft responsive websites where technologies meet creativity</p>
-                    <Button type={'submit'}>Contact me!!!</Button>
-                </div>
-                <Photo src={photo} alt="foto"/>
-            </FlexWrapper>
+            <Container>
+                <FlexWrapper alignItems={'center'} justifyContent={'space-around'}>
+                    <div>
+                        <span>Hi there!</span>
+                        <br/>
+                        <span>I'm</span>
+                        <Name>Elena</Name>
+                        <MainTitle>a web developer</MainTitle>
+                        <p>I craft responsive websites where technologies meet creativity</p>
+                        <Button type={'submit'}>Contact me!!!</Button>
+                    </div>
+                    <Photo src={photo} alt="foto"/>
+                </FlexWrapper>
+            </Container>
         </StyledMain>
     );
 };
@@ -26,7 +28,6 @@ export const Main = () => {
 const StyledMain = styled.div`
     min-height: 100vh;
     background-color: #eaeeec;
-    border: 1px solid red;
 `
 
 const Photo = styled.img`
