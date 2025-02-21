@@ -13,6 +13,7 @@ export const Skills = () => {
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText> Technologies I’ve been working with recently</SectionText>
                 <FlexWrapper  wrap={'wrap'} justifyContent={'space-between'} >
+                    // TODO change sizes for icons
                     <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'js'} />
                     <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'ts'} />
                     <Skill width={'120'} height={'120'} viewBox={'0 0 120 120'} iconId={'react'} />
