@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {LinkNav} from "../LinkNav.tsx";
+import {theme} from "../../styles/Theme.tsx";
 
 
 export const Menu = (props: {menuItems: Array<string>}) => {
@@ -8,7 +9,15 @@ export const Menu = (props: {menuItems: Array<string>}) => {
             <ul>
                 {props.menuItems.map((item: string, index) => {
                     return <ListItem key={index}>
-                        <LinkNav href="">{item}</LinkNav>
+                        <LinkNav href="" >
+                            {item}
+                            <Mask>
+                                <span>{item}</span>
+                            </Mask>
+                            <Mask>
+                                <span>{item}</span>
+                            </Mask>
+                        </LinkNav>
                     </ListItem>
                 })}
             </ul>
@@ -20,10 +29,71 @@ const StyledMenu = styled.nav`
     ul {
         display: flex;
         gap: 30px;
-        
+        justify-content: center;
     }
 `
 
-const ListItem = styled.li`
 
+const Mask = styled.span`
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    height: 50%;
+    overflow: hidden;
+    //outline: 1px solid red;
+    
+    & + & {
+        top: 50%;
+        span {
+            display: inline-block;
+            transform: translateY(-50%);
+        }
+    }
+`
+
+
+const ListItem = styled.li`
+    position: relative;
+
+    ${LinkNav} {
+        color: ${theme.colors.fonsPrimary.textSection}
+    }
+
+
+    &:hover {
+        ${LinkNav} {
+            color: transparent;
+        }
+
+        ${Mask} {
+            background: ${theme.colors.linearGradientText};
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            transform: skewX(12deg) translateX(5px);
+
+            & + ${Mask} {
+                transform: skewX(12deg) translateX(-5px);
+            }
+        }
+
+        &::before {
+            content: '';
+            display: inline-block;
+            height: 2px;
+            background: ${theme.colors.linearGradientText};
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+
+            position: absolute;
+            top: 50%;
+            left: -10px;
+            right: -10px;
+            z-index: 1;
+        }
+    }
 `
