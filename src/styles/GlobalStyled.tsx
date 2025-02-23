@@ -1,5 +1,5 @@
 import {createGlobalStyle} from "styled-components";
-import {Theme} from "./Theme.tsx";
+import {theme} from "./Theme.tsx";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -16,7 +16,8 @@ export const GlobalStyles = createGlobalStyle`
         sans-serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        color: ${Theme.colors.fonsPrimary.textSection};
+        color: ${theme.colors.fonsPrimary.textSection};
+        background-color: ${theme.colors.testBgc};
     }
     
     a {
@@ -30,11 +31,5 @@ export const GlobalStyles = createGlobalStyle`
     button {
         background-color: unset;
         border: none;
-    }
-    
-    section,
-    footer,
-    header {
-        background-color: ${Theme.colors.primaryBgc};
     }
 `
