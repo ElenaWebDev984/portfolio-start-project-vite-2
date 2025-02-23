@@ -67,11 +67,8 @@ const ListItem = styled.li`
         }
 
         ${Mask} {
-            background: ${theme.colors.linearGradientText};
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
+            color: ${theme.colors.accentText};
+            //TODO how to change color for linearGradientText???
             transform: skewX(12deg) translateX(5px);
 
             & + ${Mask} {
@@ -83,11 +80,7 @@ const ListItem = styled.li`
             content: '';
             display: inline-block;
             height: 2px;
-            background: ${theme.colors.linearGradientText};
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            color: transparent;
+            background-color: ${theme.colors.accentText2};
 
             position: absolute;
             top: 50%;
