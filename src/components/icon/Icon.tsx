@@ -1,4 +1,5 @@
 import iconsSprite from '../../assets/images/icon-sprite.svg'
+import iconsSpriteLayout from '../../assets/images/icon-sprite-maket.svg'
 
 type IconPropsType = {
     iconId: string
@@ -13,6 +14,7 @@ export const Icon = (props: IconPropsType) => {
         <svg height={props.height || '50'} width={props.width || '50'} viewBox={props.viewBox || '0 0 50 50'} overflow={props.overflow || 'visible'}
              xmlns="http://www.w3.org/2000/svg">
             <use xlinkHref={`${iconsSprite}#${props.iconId}`}/>
+            <use xlinkHref={`${iconsSpriteLayout}#${props.iconId}`}/>
         </svg>
     );
 };
