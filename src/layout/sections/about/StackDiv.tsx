@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../../../components/icon/Icon.tsx";
+import {theme} from "../../../styles/Theme.tsx";
 
 type StackDivPropsType = {
     iconId: string
@@ -27,5 +28,10 @@ const StyledStackDiv = styled.div`
 
 
 const AboutIconSpan = styled.span`
-    
+    color: ${theme.colors.fonsPrimary.textAboutLink};
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 28px;
+    letter-spacing: 1px;
+
 `
