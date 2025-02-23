@@ -12,10 +12,10 @@ const navItems = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact',]
 export const Header = () => {
     return (
         <StyledHeader>
-            <Container>
+            <Container display={'flex'}>
                 <FlexWrapper justifyContent='space-between' alignItems={'center'}>
                     <Logo />
-                    <FlexWrapper>
+                    <FlexWrapper grow={1} justifyContent={'flex-end'} gap={'50px'} alignItems={'center'} >
                         <Menu menuItems={navItems} />
                         <MenuContact />
                     </FlexWrapper>
@@ -27,12 +27,11 @@ export const Header = () => {
 
 
 const StyledHeader = styled.header`
-    background-color: #eaeeec;
     padding: 40px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 10;
+    z-index: 999;
 `
 
