@@ -34,27 +34,31 @@ const StyledMain = styled.div`
     line-height: 70px;
     letter-spacing: -1px;
     display: flex;
-
-    background-color: #eaeeec;
-    //TODO delete bgc
 `
 
 
 const PhotoWrapper = styled.div`
   position: relative;
-  width: 350px; /* Ширина контейнера */
-  height: 350px; /* Высота контейнера */
-  border-radius: 50%; /* Делаем контейнер круглым */
-  background: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%); /* Градиентный фон */
-  padding: 9px; /* Толщина "бордера" */
-  box-sizing: border-box; /* Учитываем padding в размерах */
+
+    &::before {
+        content: '';
+        width: 350px;
+        height: 350px;
+        border: 9px solid;
+        //border-radius: 50%;
+        //overflow: hidden; /* Обрезаем всё, что выходит за пределы круга */
+        position: absolute;
+
+        border-image: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) 1;
+        //-webkit-background-clip: border-box;
 `;
 
 const Photo = styled.img`
-  width: 100%; /* Занимает всю ширину контейнера */
-  height: 100%; /* Занимает всю высоту контейнера */
-  border-radius: 50%; /* Делаем изображение круглым */
-  object-fit: cover; /* Чтобы изображение заполнило круг */
+    width: 450px;
+    height: 380px;
+    //border-radius: 50%;
+    object-fit: contain; /* 
+    cover Чтобы изображение заполнило круг */
 `;
 
 
@@ -87,7 +91,7 @@ const Name = styled.h2`
 
 
 const SmallText = styled.span`
-
+    
 `
 
 
