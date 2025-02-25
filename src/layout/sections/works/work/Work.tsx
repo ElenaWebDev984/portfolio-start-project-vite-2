@@ -20,11 +20,11 @@ export const Work = (props: WorkPropsType) => {
             <Image src={props.src} alt={props.alt} />
             <WorkTitle>{props.title}</WorkTitle>
             <WorkText>{props.text}</WorkText>
-            <FlexWrapper>
-                <span>Tech stack :</span>
+            <FlexWrapper height={'auto'} >
+                <StackSpan>Tech stack :  </StackSpan>
                 <MenuProject menuItems={projectItems} />
             </FlexWrapper>
-            <FlexWrapper gap={'20px'}>
+            <FlexWrapper gap={'20px'} height={'auto'} justifyContent={'space-around'} >
                 <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
                 <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
             </FlexWrapper>
@@ -53,6 +53,11 @@ const WorkTitle = styled.h3`
 
 
 const WorkText = styled.p`
+
+`
+
+
+const StackSpan = styled.span`
 
 `
 
