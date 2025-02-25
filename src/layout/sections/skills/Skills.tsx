@@ -12,21 +12,7 @@ export const Skills = () => {
             <Container>
                 <SectionTitle>My Tech Stack</SectionTitle>
                 <SectionText> Technologies I’ve been working with recently</SectionText>
-                <FlexWrapper  wrap={'wrap'} justifyContent={'space-between'} >
-                    {/*Layout*/}
-                    {/*<Skill iconId={'html-maket'} />*/}
-                    {/*<Skill iconId={'css-maket'} />*/}
-                    {/*<Skill iconId={'js-maket'} />*/}
-                    {/*<Skill iconId={'react-maket'} />*/}
-                    {/*<Skill iconId={'redux-maket'} />*/}
-                    {/*<Skill iconId={'bootstrap-maket'} />*/}
-                    {/*<Skill iconId={'tailwind-maket'} />*/}
-                    {/*<Skill iconId={'sass-maket'} />*/}
-                    {/*<Skill iconId={'git-maket'} />*/}
-                    {/*<Skill iconId={'cib-maket'} />*/}
-                    {/*<Skill iconId={'vscode-maket'} />*/}
-                    {/*<Skill iconId={'github-maket'} />*/}
-
+                <FlexWrapper  wrap={'wrap'} justifyContent={'space-between'} textAlign={'center'} >
                     <Skill iconId={'js'} />
                     <Skill iconId={'ts'} />
                     <Skill iconId={'react'} />
