@@ -48,13 +48,14 @@ const AboutSmall = styled.small`
     font-size: 9px;
     line-height: 26px;
     text-align: center;
+    
     position: relative;
     z-index: 0;
     
     &::before {
         content: '';
         display: inline-block;
-        min-width: 100%;
+        min-width: 200%;
         //width: 84px;
         height: 24px;
         border-radius: 100px;
@@ -62,11 +63,10 @@ const AboutSmall = styled.small`
 
         position: absolute;
         //top: -3px;
-        //left: 612px;
         bottom: 0;
         z-index: -1;
-        //right: 50%;
-        //left: 50%;
+        left: 50%;
+        transform: translateX(-50%);
     }
 `
 
