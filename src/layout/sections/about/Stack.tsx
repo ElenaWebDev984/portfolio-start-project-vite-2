@@ -47,7 +47,8 @@ const AboutSmall = styled.small`
     font-weight: 600;
     font-size: 9px;
     line-height: 26px;
-    text-align: center;
+    text-align: left;
+    margin-right: 30px;
     
     position: relative;
     z-index: 0;
