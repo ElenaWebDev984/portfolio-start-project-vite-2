@@ -1,5 +1,5 @@
 import iconsSprite from '../../assets/images/icon-sprite.svg'
-import iconsSpriteLayout from '../../assets/images/icon-sprite-maket.svg'
+import iconsSpriteLayout from '../../assets/images/icon-sprite-layout.svg'
 
 type IconPropsType = {
     iconId: string
