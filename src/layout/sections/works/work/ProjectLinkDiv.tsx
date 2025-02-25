@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../../../../components/icon/Icon.tsx";
+import {theme} from "../../../../styles/Theme.tsx";
 
 type ProjectLinkDivPropsType = {
     iconId: string
@@ -27,5 +28,15 @@ const StyledProjectLinkDiv = styled.div`
 
 
 const ProjectLink = styled.a`
+    position: relative;
 
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: ${theme.colors.fonsPrimary.textAboutLink};
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+    }
 `
