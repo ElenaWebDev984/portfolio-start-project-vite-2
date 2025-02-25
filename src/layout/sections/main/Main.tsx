@@ -26,7 +26,7 @@ export const Main = () => {
     );
 };
 
-const StyledMain = styled.div`
+const StyledMain = styled.section`
     min-height: 100vh;
     color: ${theme.colors.fonsPrimary.textH2H3};
     font-weight: 700;

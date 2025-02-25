@@ -18,7 +18,7 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-    min-height: 100%;
+   
 `
 
 
