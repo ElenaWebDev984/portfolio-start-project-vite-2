@@ -17,18 +17,20 @@ export const About = () => {
                             export it as a set of static files: HTML/CSS/JS.</AboutText>
 
                         <AboutTitle>Work Experience</AboutTitle>
-                        <Stack spanText={'Junior Web Developer'} smallText={'Full Time'}
-                               calendarText={'Sep 2021 - Dec 2021'} cityLocText={'Dr. Rajkumar’s Learning App'}
-                               locationText={'Bengaluru'}/>
-                        <Stack spanText={'Web Development Intern'} smallText={'Internship'}
-                               calendarText={'Sep 2021 - Dec 2021'} cityLocText={'IonPixelz Web Solutions'}
-                               locationText={'Bengaluru'}/>
-                        <Stack spanText={'SEO / SEM Specialist'} smallText={'Internship'}
-                               calendarText={'Sep 2021 - Dec 2021'} cityLocText={'HAAPS'} locationText={'Bengaluru'}/>
+                        <AboutGapWrapper>
+                            <Stack spanText={'Junior Web Developer'} smallText={'Full Time'}
+                                   calendarText={'Sep 2021 - Dec 2021'} cityLocText={'Dr. Rajkumar’s Learning App'}
+                                   locationText={'Bengaluru'}/>
+                            <Stack spanText={'Web Development Intern'} smallText={'Internship'}
+                                   calendarText={'Sep 2021 - Dec 2021'} cityLocText={'IonPixels Web Solutions'}
+                                   locationText={'Bengaluru'}/>
+                            <Stack spanText={'SEO / SEM Specialist'} smallText={'Internship'}
+                                   calendarText={'Sep 2021 - Dec 2021'} cityLocText={'HEAPS'} locationText={'Bengaluru'}/>
+                        </AboutGapWrapper>
 
                         <AboutTitle>Education</AboutTitle>
                         <Stack spanText={'Bachelor in Electronics & Communication'} smallText={'Full Time'}
-                               calendarText={'Aug 2015 - Dec 2020'} cityLocText={'Bangalore Instutute of Technology'}
+                               calendarText={'Aug 2015 - Dec 2020'} cityLocText={'Bangalore Institute of Technology'}
                                locationText={'Bengaluru'}/>
                     </FlexWrapper>
                     <EmptyDiv />
@@ -39,8 +41,7 @@ export const About = () => {
 };
 
 
-const StyledAbout = styled.div`
-    min-height: 100vh;
+const StyledAbout = styled.section`
     text-align: left;
 
 `
@@ -52,6 +53,7 @@ const AboutTitle = styled.h3`
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
+    padding: 38px;
 `
 
 
@@ -90,5 +92,11 @@ const EmptyDiv = styled.div`
     width: 835px;
     height: 835px;
     //background-color: red;
-   
+`
+
+
+const AboutGapWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 `
