@@ -32,4 +32,8 @@ export const GlobalStyles = createGlobalStyle`
         background-color: unset;
         border: none;
     }
+    
+    section {
+        padding: 100px 0;
+    }
 `
