@@ -5,5 +5,5 @@ export const SectionText = styled.p`
     font-size: 32px;
     line-height: 26px;
     text-align: center;
-
+    margin-bottom: 110px;
 `
