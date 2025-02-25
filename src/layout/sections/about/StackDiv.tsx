@@ -24,6 +24,8 @@ const StyledStackDiv = styled.div`
     display: flex;
     text-align: center;
     border: 1px solid orange;
+    justify-content: center;
+    align-items: center;
 `
 
 
