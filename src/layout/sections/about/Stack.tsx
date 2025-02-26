@@ -22,9 +22,9 @@ export const Stack = (props: StackPropsType) => {
                 <AboutSmall>{props.smallText}</AboutSmall>
             </FlexWrapper>
 
-            <FlexWrapper justifyContent={'space-between'}>
-                <StackDivLocationWrapper cityLocText={props.cityLocText} locationText={props.locationText} />
-                <StackDiv iconId={'calendar'} text={props.calendarText} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+            <FlexWrapper justifyContent={'space-between'} >
+                <StackDiv iconId={'city-location'} text={props.cityLocText} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+                <StackDivLocationWrapper calendarText={props.calendarText} locationText={props.locationText} />
             </FlexWrapper>
         </StyledStack>
     );
