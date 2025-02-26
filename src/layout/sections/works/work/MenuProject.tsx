@@ -17,6 +17,11 @@ export const MenuProject = (props: {menuItems: Array<string>}) => {
 
 
 const StyledMenuProject = styled.nav`
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 26px;
+
+
     ul {
         display: flex;
         flex-direction: row;
