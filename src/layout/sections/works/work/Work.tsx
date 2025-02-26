@@ -2,6 +2,8 @@ import styled from "styled-components";
 import {MenuProject} from "./MenuProject.tsx";
 import {FlexWrapper} from "../../../../components/FlexWrapper.tsx";
 import {ProjectLinkDiv} from "./ProjectLinkDiv.tsx";
+import {theme} from "../../../../styles/Theme.tsx";
+import {Button} from "../../../../components/Button.tsx";
 
 
 const projectItems = ['HTML, ', 'JavaScript, ', 'SASS, ', 'React' ,]
@@ -17,16 +19,21 @@ type WorkPropsType = {
 export const Work = (props: WorkPropsType) => {
     return (
         <StyledWork>
-            <Image src={props.src} alt={props.alt} />
-            <WorkTitle>{props.title}</WorkTitle>
-            <WorkText>{props.text}</WorkText>
-            <FlexWrapper height={'auto'} >
-                <StackSpan>Tech stack :  </StackSpan>
-                <MenuProject menuItems={projectItems} />
-            </FlexWrapper>
-            <FlexWrapper gap={'20px'} height={'auto'} justifyContent={'space-around'} >
-                <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
-                <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+            <ImageWrapper>
+                <Image src={props.src} alt={props.alt} />
+                <Button>View Project</Button>
+            </ImageWrapper>
+            <FlexWrapper direction={'column'} margin={'30px 30px 25px'}>
+                <WorkTitle>{props.title}</WorkTitle>
+                <WorkText>{props.text}</WorkText>
+                <FlexWrapper height={'auto'} margin={'0 0 30px 0'}>
+                    <StackSpan>Tech stack :  </StackSpan>
+                    <MenuProject menuItems={projectItems} />
+                </FlexWrapper>
+                <FlexWrapper gap={'20px'} height={'auto'} justifyContent={'space-around'} >
+                    <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+                    <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
+                </FlexWrapper>
             </FlexWrapper>
         </StyledWork>
     );
@@ -37,6 +44,7 @@ const StyledWork = styled.div`
     background-color: #FFFFFF;
     max-width: 375px;
     width: 100%;
+    line-height: 26px;
 `
 
 
@@ -44,20 +52,62 @@ const Image = styled.img`
     width: 100%;
     height: 260px;
     object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: ${theme.colors.projectBgc};
+    //TODO remove cornersBGC
+`
+
+
+const ImageWrapper = styled.div`
+    position: relative;
+    
+    &:hover {
+        &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(4);
+        }
+        
+        ${Button} {
+            opacity: 1;
+        }
+    }
+
+    ${Button} {
+        opacity: 0;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%);
+    }
 `
 
 
 const WorkTitle = styled.h3`
-
+    font-weight: 500;
+    font-size: 28px;
+    
 `
 
 
 const WorkText = styled.p`
-
+    font-weight: 300;
+    font-size: 18px;
+    text-align: left;
+    margin: 17px 0 12px;
 `
 
 
 const StackSpan = styled.span`
+    font-weight: 400;
+    font-size: 16px;
+
 
 `
 
