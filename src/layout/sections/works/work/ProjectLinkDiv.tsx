@@ -15,6 +15,7 @@ export const ProjectLinkDiv = (props: ProjectLinkDivPropsType) => {
     return (
         <StyledProjectLinkDiv>
             <Icon iconId={props.iconId} width={props.width} height={props.height} viewBox={props.viewBox} />
+            {/*TODO change chainImage*/}
             <ProjectLink href={props.href}>{props.textLink}</ProjectLink>
         </StyledProjectLinkDiv>
     );
@@ -24,11 +25,16 @@ export const ProjectLinkDiv = (props: ProjectLinkDivPropsType) => {
 const StyledProjectLinkDiv = styled.div`
     display: flex;
     border: 1px solid violet;
-    gap: 3px;
+    gap: 10px;
 `
 
 
 const ProjectLink = styled.a`
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: ${theme.colors.fonsPrimary.textProjectTitle};
+
     position: relative;
 
     &::before {
@@ -38,6 +44,6 @@ const ProjectLink = styled.a`
         width: 100%;
         height: 1px;
         position: absolute;
-        bottom: 0;
+        bottom: 3px;
     }
 `
