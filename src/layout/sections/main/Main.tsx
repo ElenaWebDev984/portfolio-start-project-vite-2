@@ -102,7 +102,7 @@ const MainText = styled.p`
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
-
+    margin: 30px 0;
 `
 
 
