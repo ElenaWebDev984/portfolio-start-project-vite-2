@@ -99,4 +99,8 @@ const AboutGapWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 30px;
+    //
+    // & + stack {
+    //     margin-top: 30px;
+    // }
 `
