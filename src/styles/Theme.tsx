@@ -3,6 +3,7 @@ export const theme = {
         testBgc: '#eaeeec',
         primaryBgc: '#FFFFFF',
         secondaryBgc: '#191919',
+        projectBgc: '#D9D9D9',
         smallAboutBgc: '#D7FFE0',
 
         accentPic: '#E70FAA',
