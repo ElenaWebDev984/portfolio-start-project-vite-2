@@ -18,6 +18,7 @@ export const Header = () => {
                     <FlexWrapper grow={1} justifyContent={'flex-end'} gap={'50px'} alignItems={'center'} >
                         <Menu menuItems={navItems} />
                         <MenuContact />
+                        {/*TODO add change languages (en, es, ru)*/}
                     </FlexWrapper>
                 </FlexWrapper>
             </Container>
