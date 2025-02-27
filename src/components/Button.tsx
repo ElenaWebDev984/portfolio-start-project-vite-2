@@ -9,4 +9,5 @@ export const Button = styled.button`
     cursor: pointer;
     background-image: ${theme.colors.linearGradientPic};
     color: ${theme.colors.fonsPrimary.textSlogan};
+    
 `
