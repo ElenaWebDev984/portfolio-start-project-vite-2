@@ -16,5 +16,6 @@ export const IconIdWrapper = styled.div<IconIdWrapper>`
     justify-content: ${props => props.justifyContent || 'center'};
     align-items: ${props => props.alignItems || 'center'};
     gap: ${props => props.gap};
+    text-align: center;
 `
 
