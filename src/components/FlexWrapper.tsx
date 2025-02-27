@@ -21,6 +21,6 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
     gap: ${ props => props.gap};
     flex-grow: ${ props => props.grow};
     height: ${props => props.height || '100%'};
-    text-align: ${props => props.textAlign  || 'center'};
+    text-align: ${props => props.textAlign  || 'left'};
     margin: ${props => props.margin};
 `
