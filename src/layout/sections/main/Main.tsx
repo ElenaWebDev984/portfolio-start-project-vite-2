@@ -10,7 +10,7 @@ export const Main = () => {
         <StyledMain>
             <Container>
                 <FlexWrapper alignItems={'center'} justifyContent={'space-between'}>
-                    <FlexWrapper direction={'column'} justifyContent={'center'}>
+                    <FlexWrapper direction={'column'} justifyContent={'center'} >
                         <SmallText>Hi there! 👋</SmallText>
                         <Name>I'm <span>Elena</span>,</Name>
                         <MainTitle>a <span>web developer</span></MainTitle>
@@ -102,7 +102,7 @@ const MainText = styled.p`
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
-    margin: 30px 0;
+    margin: 35px 0;
 `
 
 
