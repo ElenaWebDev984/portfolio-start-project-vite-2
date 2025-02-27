@@ -42,7 +42,6 @@ export const About = () => {
 
 
 const StyledAbout = styled.section`
-    text-align: left;
 
 `
 
@@ -53,7 +52,7 @@ const AboutTitle = styled.h3`
     font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
-    padding: 38px;
+    padding: 38px 0;
 `
 
 
