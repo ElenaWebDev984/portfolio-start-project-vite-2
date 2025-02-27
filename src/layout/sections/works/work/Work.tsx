@@ -30,7 +30,7 @@ export const Work = (props: WorkPropsType) => {
                     <StackSpan>Tech stack :  </StackSpan>
                     <MenuProject menuItems={projectItems} />
                 </FlexWrapper>
-                <FlexWrapper gap={'20px'} height={'auto'} justifyContent={'space-around'} >
+                <FlexWrapper gap={'20px'} height={'auto'} justifyContent={'space-between'} >
                     <ProjectLinkDiv iconId={'proj-chain'} textLink={'Live Preview'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
                     <ProjectLinkDiv iconId={'proj-github'} textLink={'View Code'} href={'#'} width={'20'} height={'20'} viewBox={'0 0 20 20'} />
                 </FlexWrapper>
@@ -99,7 +99,6 @@ const WorkTitle = styled.h3`
 const WorkText = styled.p`
     font-weight: 300;
     font-size: 18px;
-    text-align: left;
     margin: 17px 0 12px;
 `
 
