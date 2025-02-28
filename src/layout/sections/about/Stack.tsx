@@ -31,7 +31,17 @@ export const Stack = (props: StackPropsType) => {
 };
 
 const StyledStack = styled.div`
-    border: 1px solid blue;
+    //border: 1px solid blue;
+
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+        height: 2px;
+        background-color: ${theme.colors.fonsPrimary.textSection};
+        opacity: 30%;
+       margin-top: 20px;
+    }
 `
 
 const AboutSpan = styled.span`
