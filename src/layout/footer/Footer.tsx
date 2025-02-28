@@ -63,6 +63,6 @@ const DivPseudoWrapper = styled.div`
         height: 2px;
         background-color: ${theme.colors.fonsPrimary.textSection};
         opacity: 30%;
-        margin: 45px 0;
+        margin: 30px 0;
     }
 `
