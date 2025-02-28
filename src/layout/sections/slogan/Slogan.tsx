@@ -12,7 +12,7 @@ export const Slogan = () => {
             <Container>
                 <FlexWrapper direction="column" justifyContent={'center'} alignItems={'center'}>
                     <StyledSloganText>More projects I’ve worked on:</StyledSloganText>
-                    <FlexWrapper alignItems={'center'}>
+                    <FlexWrapper alignItems={'center'} justifyContent={'center'} >
                         <IconIdWrapper >
                             <Icon iconId={'github-cont'} />
                         </IconIdWrapper>
