@@ -6,14 +6,14 @@ import {Works} from "./layout/sections/works/Works.tsx";
 import {About} from "./layout/sections/about/About.tsx";
 import {Footer} from "./layout/footer/Footer.tsx";
 import {Slogan} from "./layout/sections/slogan/Slogan.tsx";
-import {HeaderMobile} from "./layout/header/headerMobile/HeaderMobile.tsx";
+// import {HeaderMobile} from "./layout/header/headerMobile/HeaderMobile.tsx";
 
 
 function App() {
     return (
         <div className="App">
             <Header />
-            <HeaderMobile />
+            {/*<HeaderMobile />*/}
             <Main />
             <About />
             <Skills />

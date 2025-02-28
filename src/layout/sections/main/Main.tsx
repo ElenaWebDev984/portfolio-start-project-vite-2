@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import photo from '../../../assets/images/foto2.webp'
+import photo from '../../../assets/images/foto2_1.webp'
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/Button.tsx";
 import {Container} from "../../../components/Container.tsx";
@@ -9,7 +9,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems={'center'} justifyContent={'space-between'}>
+                <FlexWrapper alignItems={'center'} justifyContent={'space-between'} wrap={'wrap'}>
                     <FlexWrapper direction={'column'} justifyContent={'center'} >
                         <SmallText>Hi there! 👋</SmallText>
                         <Name>I'm <span>Elena</span>,</Name>
@@ -54,10 +54,10 @@ const PhotoWrapper = styled.div`
 `;
 
 const Photo = styled.img`
-    width: 450px;
-    height: 380px;
+    width: 350px;
+    height: 350px;
     //border-radius: 50%;
-    object-fit: contain; /* 
+    object-fit: cover; /* 
     cover Чтобы изображение заполнило круг */
 `;
 
