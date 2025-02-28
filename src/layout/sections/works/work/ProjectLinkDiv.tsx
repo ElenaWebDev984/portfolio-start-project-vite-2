@@ -24,7 +24,7 @@ export const ProjectLinkDiv = (props: ProjectLinkDivPropsType) => {
 
 const StyledProjectLinkDiv = styled.div`
     display: flex;
-    border: 1px solid violet;
+    //border: 1px solid violet;
     gap: 10px;
 `
 
