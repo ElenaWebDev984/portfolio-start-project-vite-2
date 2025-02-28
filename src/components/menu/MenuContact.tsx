@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Icon} from "../icon/Icon.tsx";
+import {theme} from "../../styles/Theme.tsx";
 
 
 export const MenuContact = () => {
@@ -30,5 +31,9 @@ const StyledMenuContact = styled.nav`
     ul {
         display: flex;
         gap: 20px;
+    }
+
+    @media ${theme.media.tablet} {
+        display: none;
     }
 `
