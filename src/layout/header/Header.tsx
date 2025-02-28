@@ -4,6 +4,8 @@ import {Menu} from "../../components/menu/Menu.tsx";
 import {MenuContact} from "../../components/menu/MenuContact.tsx";
 import {FlexWrapper} from "../../components/FlexWrapper.tsx";
 import {Container} from "../../components/Container.tsx";
+import {MobileMenu} from "./headerMobile/MobileMenu.tsx";
+import {theme} from "../../styles/Theme.tsx";
 
 
 const navItems = ['Home', 'About', 'Tech Stack', 'Projects', 'Contact',]
@@ -17,6 +19,7 @@ export const Header = () => {
                     <Logo />
                     <FlexWrapper grow={1} justifyContent={'flex-end'} gap={'50px'} alignItems={'center'} >
                         <Menu menuItems={navItems} />
+                        <MobileMenu menuItems={navItems} />
                         <MenuContact />
                         {/*TODO add change languages (en, es, ru)*/}
                     </FlexWrapper>
@@ -34,5 +37,11 @@ const StyledHeader = styled.header`
     left: 0;
     right: 0;
     z-index: 999;
+
+    display: block;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 `
 
