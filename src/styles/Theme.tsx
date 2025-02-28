@@ -40,5 +40,10 @@ export const theme = {
             textSlogan: '#1E0E62',
         },
 
-}
+    },
+
+    media: {
+        tablet: 'screen and (max-width: 768px)',
+        mobile: 'screen and (max-width: 576px)',
+    },
 }
