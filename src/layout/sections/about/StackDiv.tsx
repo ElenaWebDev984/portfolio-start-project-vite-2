@@ -23,9 +23,10 @@ export const StackDiv = (props: StackDivPropsType) => {
 const StyledStackDiv = styled.div`
     display: flex;
     text-align: center;
-    border: 1px solid orange;
+    //border: 1px solid orange;
     justify-content: center;
     align-items: center;
+    gap: 10px;
 `
 
 
