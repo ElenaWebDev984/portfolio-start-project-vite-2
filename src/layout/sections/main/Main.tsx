@@ -38,25 +38,37 @@ const StyledMain = styled.section`
 
 
 const PhotoWrapper = styled.div`
-  position: relative;
+  //position: relative;
+    width: 350px;
+    height: 350px;
+    //border: 9px solid ;
+    border-radius: 50%;
+    background: ${theme.colors.linearGradientPic};
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &::before {
-        content: '';
-        width: 350px;
-        height: 350px;
-        border: 9px solid;
-        //border-radius: 50%;
+    // &::before {
+    //     content: '';
+    //     width: 350px;
+    //     height: 350px;
+    //     border: 9px solid ${theme.colors.linearGradientPic};
+    //     border-radius: 50%;
+    //     position: absolute;
+        
+        // background: ${theme.colors.linearGradientPic};
         //overflow: hidden; /* Обрезаем всё, что выходит за пределы круга */
-        position: absolute;
-
-        border-image: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) 1;
-        //-webkit-background-clip: border-box;
+        //border-image: linear-gradient(180deg, #E70FAA 0%, #00C0FD 100%) 1;
+        ////-webkit-background-clip: border-box;
 `;
 
 const Photo = styled.img`
-    width: 350px;
-    height: 350px;
-    //border-radius: 50%;
+    //width: 350px;
+    //height: 350px;
+    width: 335px;
+    height: 335px;
+    border-radius: 50%;
     object-fit: cover; /* 
     cover Чтобы изображение заполнило круг */
 `;
