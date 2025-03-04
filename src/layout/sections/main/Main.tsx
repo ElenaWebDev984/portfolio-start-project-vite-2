@@ -4,12 +4,13 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {Button} from "../../../components/Button.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+import {font} from "../../../styles/Common.ts";
 
 export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems={'center'} justifyContent={'space-between'} wrap={'wrap'}>
+                <FlexWrapper alignItems={'center'} justifyContent={'space-between'} wrap={'wrap'} >
                     <FlexWrapper direction={'column'} justifyContent={'center'} >
                         <SmallText>Hi there! 👋</SmallText>
                         <Name>I'm <span>Elena</span>,</Name>
@@ -27,13 +28,21 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
+    ${font({weight: 700, Fmax: 58, Fmin: 36})}
     min-height: 100vh;
     color: ${theme.colors.fonsPrimary.textH2H3};
-    font-weight: 700;
-    font-size: 58px;
+    //font-weight: 700;
+    //font-size: 58px;
     line-height: 70px;
     letter-spacing: -1px;
     display: flex;
+
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            flex-wrap: wrap;
+           
+        }
+    }
 `
 
 
@@ -48,6 +57,11 @@ const PhotoWrapper = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media ${theme.media.mobile} {
+        width: 315px;
+        height: 315px;
+    }
 
     // &::before {
     //     content: '';
@@ -69,13 +83,19 @@ const Photo = styled.img`
     width: 335px;
     height: 335px;
     border-radius: 50%;
-    object-fit: cover; /* 
-    cover Чтобы изображение заполнило круг */
+    object-fit: cover; /* Чтобы изображение заполнило круг */
+    
+    @media ${theme.media.mobile} {
+        width: 300px;
+        height: 300px;
+    }
 `;
 
 
 const MainTitle = styled.h1`
-    font-size: 58px;
+    ${font({Fmax: 58, Fmin: 36})}
+    //font-size: 58px;
+    color: ${theme.colors.fonsPrimary.textH2H3};
     
     span {
         background: ${theme.colors.linearGradientText};
@@ -89,7 +109,9 @@ const MainTitle = styled.h1`
 
 
 const Name = styled.h2`
-    font-size: 58px;
+    ${font({Fmax: 58, Fmin: 36})}
+    //font-size: 58px;
+    color: ${theme.colors.fonsPrimary.textH2H3};
 
     span {
         background: ${theme.colors.linearGradientText};
@@ -108,10 +130,11 @@ const SmallText = styled.span`
 
 
 const MainText = styled.p`
+    ${font({family: "'DM Sans', sans-serif", weight: 500, Fmax: 42, Fmin: 20})}
     color: ${theme.colors.fonsPrimary.textSlogan};
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 500;
-    font-size: 42px;
+    //font-family: 'DM Sans', sans-serif;
+    //font-weight: 500;
+    //font-size: 42px;
     line-height: 52px;
     letter-spacing: -0.4px;
     margin: 35px 0;
