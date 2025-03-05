@@ -37,6 +37,12 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     padding: 60px 0;
+
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            flex-direction: column;
+        }
+    }
 `
 
 
