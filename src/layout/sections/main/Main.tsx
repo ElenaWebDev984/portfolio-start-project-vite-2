@@ -10,7 +10,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper alignItems={'center'} justifyContent={'space-between'} wrap={'wrap'} >
+                <FlexWrapper alignItems={'center'} justifyContent={'space-between'} >
                     <FlexWrapper direction={'column'} justifyContent={'center'} >
                         <SmallText>Hi there! 👋</SmallText>
                         <Name>I'm <span>Elena</span>,</Name>
@@ -28,7 +28,7 @@ export const Main = () => {
 };
 
 const StyledMain = styled.section`
-    ${font({weight: 700, Fmax: 58, Fmin: 36})}
+    ${font({weight: 700, Fmax: 58, Fmin: 36})};
     min-height: 100vh;
     color: ${theme.colors.fonsPrimary.textH2H3};
     //font-weight: 700;
@@ -37,10 +37,22 @@ const StyledMain = styled.section`
     letter-spacing: -1px;
     display: flex;
 
-    @media ${theme.media.tablet} {
+    @media ${theme.media.flexWrap} {
         ${FlexWrapper} {
             flex-wrap: wrap;
-           
+            align-items: center;
+        }
+    }
+    
+    @media ${theme.media.tablet} {
+        ${FlexWrapper} {
+            
+        }
+    }
+
+    @media ${theme.media.mobile} {
+        ${FlexWrapper} {
+            
         }
     }
 `
@@ -53,14 +65,22 @@ const PhotoWrapper = styled.div`
     //border: 9px solid ;
     border-radius: 50%;
     background: ${theme.colors.linearGradientPic};
-    
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 200px;
 
+    @media ${theme.media.flexWrap} {
+       margin: 0 auto;
+    }
+
+    @media ${theme.media.tablet} {
+        
+    }
+    
     @media ${theme.media.mobile} {
-        width: 315px;
-        height: 315px;
+        width: 310px;
+        height: 310px;
     }
 
     // &::before {
@@ -104,6 +124,7 @@ const MainTitle = styled.h1`
         background-clip: text;
         color: transparent;
         display: inline-block;
+        white-space: nowrap;
     }
 `
 
@@ -120,6 +141,7 @@ const Name = styled.h2`
         background-clip: text;
         color: transparent;
         display: inline-block; 
+        white-space: nowrap;
     }
 `;
 
@@ -138,6 +160,16 @@ const MainText = styled.p`
     line-height: 52px;
     letter-spacing: -0.4px;
     margin: 35px 0;
+    
+    @media ${theme.media.tablet} {
+       margin: 35px 30px;
+        text-align: center;
+    }
+
+    @media ${theme.media.mobile} {
+        width: 315px;
+        height: 315px;
+    }
 `
 
 
