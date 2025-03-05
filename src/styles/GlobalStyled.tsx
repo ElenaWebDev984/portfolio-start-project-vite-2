@@ -18,6 +18,7 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.colors.fonsPrimary.textSection};
         background-color: ${theme.colors.testBgc};
+        min-width: 360px;
     }
     
     a {
