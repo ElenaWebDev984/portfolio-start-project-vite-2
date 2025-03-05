@@ -10,6 +10,7 @@ import projectImg4 from './../../../assets/images/proj4.webp';
 import projectImg5 from './../../../assets/images/proj5.webp';
 import projectImg6 from './../../../assets/images/proj6.webp';
 import {Container} from "../../../components/Container.tsx";
+import {theme} from "../../../styles/Theme.tsx";
 
 
 export const Works = () => {
@@ -32,6 +33,11 @@ export const Works = () => {
 };
 
 const StyledWorks = styled.section`
-   
+    @media ${theme.media.flexWrap} {
+        ${FlexWrapper} {
+            justify-content: space-between;
+            gap: 30px;
+        }
+    }
 `
 
