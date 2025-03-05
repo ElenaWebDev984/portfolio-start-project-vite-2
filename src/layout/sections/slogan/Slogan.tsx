@@ -4,6 +4,7 @@ import {Container} from "../../../components/Container.tsx";
 import {theme} from "../../../styles/Theme.tsx";
 import {Icon} from "../../../components/icon/Icon.tsx";
 import {IconIdWrapper} from "../../../components/icon/IconIdWrapper.tsx";
+import {font} from "../../../styles/Common.ts";
 
 
 export const Slogan = () => {
@@ -25,9 +26,10 @@ export const Slogan = () => {
 };
 
 const StyledSlogan = styled.section`
-    font-family: 'DM Sans', sans-serif;
-    font-weight: 700;
-    font-size: 58px;
+    ${font({family: "'DM Sans', sans-serif", weight: 700, Fmax: 58, Fmin: 36})};
+    //font-family: 'DM Sans', sans-serif;
+    //font-weight: 700;
+    //font-size: 58px;
     line-height: 70px;
     letter-spacing: -1px;
 `
