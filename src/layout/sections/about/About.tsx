@@ -3,6 +3,7 @@ import {Stack} from "./Stack.tsx";
 import {Container} from "../../../components/Container.tsx";
 import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+import {font} from "../../../styles/Common.ts";
 
 
 export const About = () => {
@@ -47,18 +48,20 @@ const StyledAbout = styled.section`
 
 
 const AboutTitle = styled.h3`
+    ${font({weight: 700, Fmax: 42, Fmin: 36})};
     color: ${theme.colors.fonsPrimary.textH2H3};
-    font-weight: 700;
-    font-size: 42px;
-    line-height: 52px;
+    //font-weight: 700;
+    //font-size: 42px;
+    //line-height: 52px;
     letter-spacing: -0.4px;
     padding: 38px 0;
 `
 
 
 const AboutText = styled.p`
-    font-weight: 400;
-    font-size: 18px;
+    ${font({weight: 400, Fmax: 18, Fmin: 12})};
+    //font-weight: 400;
+    //font-size: 18px;
     line-height: 26px;
 `
 
