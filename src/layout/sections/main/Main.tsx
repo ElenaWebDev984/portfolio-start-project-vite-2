@@ -44,17 +44,6 @@ const StyledMain = styled.section`
         }
     }
     
-    @media ${theme.media.tablet} {
-        ${FlexWrapper} {
-            
-        }
-    }
-
-    @media ${theme.media.mobile} {
-        ${FlexWrapper} {
-            
-        }
-    }
 `
 
 
