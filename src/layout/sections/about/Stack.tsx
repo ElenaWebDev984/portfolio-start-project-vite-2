@@ -3,6 +3,7 @@ import {FlexWrapper} from "../../../components/FlexWrapper.tsx";
 import {StackDiv} from "./StackDiv.tsx";
 import {StackDivLocationWrapper} from "./StackDivLocationWrapper.tsx";
 import {theme} from "../../../styles/Theme.tsx";
+import {font} from "../../../styles/Common.ts";
 
 
 type StackPropsType = {
@@ -42,20 +43,26 @@ const StyledStack = styled.div`
         opacity: 30%;
        margin-top: 20px;
     }
+
+    @media ${theme.media.mobile} {
+        flex-wrap: wrap;
+    }
 `
 
 const AboutSpan = styled.span`
-    font-weight: 400;
-    font-size: 20px;
+    ${font({weight: 400, Fmax: 20, Fmin: 16})};
+    //font-weight: 400;
+    //font-size: 20px;
     line-height: 28px;
     letter-spacing: 1px;
 
 `
 
 const AboutSmall = styled.small`
+    ${font({weight: 600, Fmax: 9, Fmin: 6})};
     color: ${theme.colors.fonsPrimary.textAboutSmall};
-    font-weight: 600;
-    font-size: 9px;
+    //font-weight: 600;
+    //font-size: 9px;
     line-height: 26px;
     text-align: left;
     margin-right: 30px;
